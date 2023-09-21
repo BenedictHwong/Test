@@ -2,29 +2,44 @@
 //
 
 #include <iostream>
-#include <benchmark/benchmark.h>
+//#include <benchmark/benchmark.h>
+#include <celero/Celero.h>
 
-static void BM_SimpleForLoop(benchmark::State& state) {
-    // This loop will run multiple times to get a more accurate measurement
-    for (auto _ : state) {
-        int sum = 0;
-        for (int i = 1; i <= 100; ++i) {
-            sum += i;
-        }
-        // Make sure the variable is not optimized away by compiler
-        benchmark::DoNotOptimize(sum);
-    }
-}
-// Register the function as a benchmark
-BENCHMARK(BM_SimpleForLoop);
-
-
-int main(int argc, char** argv)
-{
-    // Initialize the benchmark library.
-    /*benchmark::Initialize(&argc, argv);
-    benchmark::RunSpecifiedBenchmarks();*/
-}
+//// Function to be tested
+//int calculateSum() {
+//    int sum = 0;
+//    for (int i = 1; i <= 100; ++i) {
+//        sum += i;
+//    }
+//    return sum;
+//}
+//
+//// Google Benchmark function
+//static void BM_SimpleForLoop(benchmark::State& state) {
+//    for (auto _ : state) {
+//        int sum = calculateSum();
+//        benchmark::DoNotOptimize(sum);
+//    }
+//}
+//BENCHMARK(BM_SimpleForLoop);
+//
+////// Celero function
+////BASELINE(SimpleForLoopCelero, Baseline, 0, 1000000)
+////{
+////    int sum = calculateSum();
+////    celero::DoNotOptimizeAway(sum);
+////}
+//
+//
+//int main(int argc, char** argv)
+//{
+//    // Initialize and run Google Benchmark
+//    benchmark::Initialize(&argc, argv);
+//    benchmark::RunSpecifiedBenchmarks();
+//
+//    // Initialize and run Celero
+//    //celero::Run(argc, argv);
+//}
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
@@ -36,3 +51,24 @@ int main(int argc, char** argv)
 //   4. Use the Error List window to view errors
 //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+
+
+
+
+int calculateSum() {
+    int sum = 0;
+    for (int i = 1; i <= 100; ++i) {
+        sum += i;
+    }
+    return sum;
+}
+
+BASELINE(Celero_SimpleForLoop, Baseline, 10, 1000000)
+{
+    int sum = calculateSum();
+    celero::DoNotOptimizeAway(sum);
+}
+
+int main(int argc, char** argv) {
+    celero::Run(argc, argv);
+}

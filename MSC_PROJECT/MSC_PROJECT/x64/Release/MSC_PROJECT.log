@@ -1,0 +1,24 @@
+﻿  MSC_PROJECT.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 17 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+benchmark.lib(benchmark_register.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(benchmark_register.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(benchmark.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(benchmark.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(sysinfo.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(sysinfo.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(benchmark_name.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(benchmark_name.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(statistics.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(statistics.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(string_util.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(string_util.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(reporter.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(reporter.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(console_reporter.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(console_reporter.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(json_reporter.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(json_reporter.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(csv_reporter.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(csv_reporter.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(commandlineflags.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(commandlineflags.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(benchmark_runner.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(benchmark_runner.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(colorprint.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(colorprint.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(timers.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(timers.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(sleep.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(sleep.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(complexity.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(complexity.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(counter.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(counter.cc.obj)' or at ''; linking object as if no debug info
+benchmark.lib(benchmark_api_internal.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmark.lib(benchmark_api_internal.cc.obj)' or at ''; linking object as if no debug info
+  MSC_PROJECT.vcxproj -> D:\Projects\Test\MSC_PROJECT\x64\Release\MSC_PROJECT.exe
